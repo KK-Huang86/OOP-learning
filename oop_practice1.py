@@ -91,6 +91,10 @@ class LittleDog(Dog):
     super().__init__(color,tall,leg)
     self.yell=yell
 
+#多型
+
+  def attack(self):
+    print("攻擊其他人")
 
 littledog2=LittleDog("white",4,4,"WOO")
 littledog2.attack()
@@ -103,14 +107,14 @@ littledog2.set_tall(6)  # 修改 __tall 的值
 print("Tall after:", littledog2.get_tall())
 
 
-#一個Shape的類別
-#並使用ger_area()
-#然後還有Square的類別要繼承Shape
-#並使用Get_area()
-#Square的side=2 要得到結果 2*2 = 4 
-#還有一個Triangle的類別要繼承Shape
-#並使用Get_area()
-#Triangle的base=2 height=4 要得到結果2*4/2 
+# 一個Shape的類別
+# 並使用ger_area()
+# 然後還有Square的類別要繼承Shape
+# 並使用Get_area()
+# Square的side=2 要得到結果 2*2 = 4 
+# 還有一個Triangle的類別要繼承Shape
+# 並使用Get_area()
+# Triangle的base=2 height=4 要得到結果2*4/2 
 
 class Shape:
     def get_area(): #多形
